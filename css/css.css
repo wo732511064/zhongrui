@@ -51,19 +51,19 @@
 .entrance-selection-text-center2{position: absolute;width: 100%;text-align: center;bottom:50px ;font-size: 22px;color: white;}
 
 /*明星板块*/
-.trainHarvest{width: 100%;margin: 45px 0;padding: 0;text-align: center;}
+.trainHarvest{width: 100%;margin: 45px 0;padding: 0;text-align: center;padding-top: 50px;height: 400px;}
 .trainHarvest-jihe{margin: 0 auto;width: auto;display: inline-block;}
-.trainHarvest-frame{cursor:Default;overflow:hidden;text-align:center;width: 148px;background: #f4f4f4;height: 320px;float: left;margin-left: 2px;transition:all 0.5s;-moz-transition: all 0.5s; -webkit-transition: all 0.5s;-o-transition: all 0.5s}
+.trainHarvest-frame{cursor:Default;overflow:hidden;text-align:center;width: 148px;background: #f4f4f4;height: 320px;float: left;margin-left: 2px;transition:all 0.5s;-moz-transition: all 0.5s; -webkit-transition: all 0.5s;-o-transition: all 0.5s;position: relative;}
 .trainHarvest-frame:first-child{margin-left: 0px;}
 .trainHarvest-frame-ico{margin-top: 110px;}
-.trainHarvest-frame-ico1{display: none;}
-.trainHarvest-frame-text1{font-size: 18px;margin:20px 8px;color: #717171;transition:all 0.7s;-moz-transition: all 0.7s; -webkit-transition: all 0.7s;-o-transition: all 0.7s}
-.trainHarvest-frame-text2{width:258px;color: #FFFFFF;text-align: left;height: 0;overflow:hidden;transition:all 0.7s;-moz-transition: all 0.7s; -webkit-transition: all 0.7s;-o-transition: all 0.7s}
+.trainHarvest-frame-ico1{display: none;margin-top: 0px;}
+.trainHarvest-frame-text1{font-size: 18px;margin:20px 8px;color: #717171;}
+.trainHarvest-frame-text2{position: absolute;top: 50%;text-align: center;width:258px;color: #FFFFFF;height: 0;overflow:hidden;transition:all 0.7s;-moz-transition: all 0.7s; -webkit-transition: all 0.7s;-o-transition: all 0.7s}
 .trainHarvest-frame:hover{height: 420px;margin-top:-60px ;width: 298px;background:url(../images/indexHarvest-frame1.png) ;}
 .trainHarvest-frame:hover .trainHarvest-frame-text1{margin:20px 0px;color: #fff;}
 .trainHarvest-frame:hover .trainHarvest-frame-text2{height:auto;font-size: 14px;margin:0px 20px ;color: #fff;line-height: 24px;}
 .trainHarvest-frame:hover .trainHarvest-frame-ico{display: none;}
-.trainHarvest-frame:hover .trainHarvest-frame-ico1{margin: 38px auto 0 auto;display: block;}
+.trainHarvest-frame:hover .trainHarvest-frame-ico1{margin: 38px auto 0 auto;display: block;margin-top: 70px;}
 
 /*center*/
 .train-title{width: 100%;text-align: center;margin:25px auto;}
