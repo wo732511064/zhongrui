@@ -51,6 +51,28 @@
 .entrance-selection-text-center2{position: absolute;width: 100%;text-align: center;bottom:50px ;font-size: 22px;color: white;}
 
 /*明星板块*/
+.starcourse-dibu{background: #f9f9f9;padding-top:70px ;padding-bottom: 80px;width: 100%;}
+.starcourse{width: 1180px;height: 540px;margin: 0 auto;margin-top: 30px;}
+.starcourse-left{width: 360px;height: 540px;background: white;float: left;position: relative;}
+.starcourse-left-frame{text-align: center;width: 180px;height: 180px;position: absolute;color: white;transition: all 0.5s;background: -webkit-linear-gradient(left, white , #141d22); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #1a202c , #141d22); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #1a202c , #141d22); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #1a202c , #141d22);}
+.starcourse-left-frame:hover{background: -webkit-linear-gradient(left, #01c2e6 , #1160ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #01c2e6 , #1160ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #01c2e6 , #1160ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #01c2e6 , #1160ff);}
+.starcourse-left-frame img{margin-top: 55px;}
+.starcourse-left-frame span{width: 100%;display: block;margin-top: 15px;}
+.frame-a1{top:0px;left: 0px;}
+.frame-a2{top:0px;left: 180px;}
+.frame-a3{top:180px;left: 180px;}
+.frame-a4{top:360px;left: 180px;}
+.frame-a5{top:360px;left: 0px;}
+.frame-a6{top:180px;left: 0px;}
+.starcourse-left-frame.active{background: -webkit-linear-gradient(left, #01c2e6 , #1160ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #01c2e6 , #1160ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #01c2e6 , #1160ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #01c2e6 , #1160ff);}
+.starcourse-right{width: 820px;height: 540px;background: white;float: left;}
+.starcourse-right-frame{width: 100%;display: none;}
+.starcourse-right-frame.active{display: block;}
+.right-frame-header{width: 700px;margin: 0 auto;line-height: 26px;font-size: 24px;margin-top: 30px;margin-bottom: 20px;}
+.right-frame-header span{margin-right: 10px;width: 4px;height: 26px;background: #02aeff;border-radius: 1px;display: inline-block;float: left;}
+.right-frame-text{width: 670px;margin: 0 auto;font-size: 12px; color: #777777;}
+
+
 .trainHarvest{width: 100%;margin: 45px 0;padding: 0;text-align: center;padding-top: 50px;height: 400px;}
 .trainHarvest-jihe{margin: 0 auto;width: auto;display: inline-block;}
 .trainHarvest-frame{cursor:Default;overflow:hidden;text-align:center;width: 148px;background: #f4f4f4;height: 320px;float: left;margin-left: 2px;transition:all 0.5s;-moz-transition: all 0.5s; -webkit-transition: all 0.5s;-o-transition: all 0.5s;position: relative;}
