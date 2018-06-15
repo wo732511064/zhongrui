@@ -374,23 +374,16 @@ $(document).ready(function () {
             var d = $(this).attr('data-event-day');
             $('div.c-event[data-event-day="' + d + '"]').removeClass('c-event-over');
         };
-        var clickday = function(){
-        	var d =$(this).attr('data-event-day');
-        	
-        	
-        	$('div.c-event-item[data-event-day="' + d + '"]').siblings().removeAttr("style")
-        	$('div.c-event-item[data-event-day="' + d + '"]').css({"font-weight":"700","color":"#fff","background": "-webkit-linear-gradient(left, #01c2e6 , #1160ff)","background":" -o-linear-gradient(right, #01c2e6 , #1160ff)","background": "-moz-linear-gradient(right, #01c2e6 , #1160ff)","background": "linear-gradient(to right, #01c2e6 , #1160ff)"}).host;
-        	$('div.c-event-item[data-event-day="' + d + '"]').siblings().children().removeAttr("style")
-        	$('div.c-event-item[data-event-day="' + d + '"]').children().css("color","white")
-        	
-        }
+       
         var clickitem = function(){
        		var d =$(this).attr('data-event-day');
         	$('div.c-event-item[data-event-day="' + d + '"]').siblings().removeAttr("style")
         	$('div.c-event-item[data-event-day="' + d + '"]').css({"font-weight":"700","color":"#fff","background": "-webkit-linear-gradient(left, #01c2e6 , #1160ff)","background":" -o-linear-gradient(right, #01c2e6 , #1160ff)","background": "-moz-linear-gradient(right, #01c2e6 , #1160ff)","background": "linear-gradient(to right, #01c2e6 , #1160ff)"}).host;
         	$('div.c-event-item[data-event-day="' + d + '"]').siblings().children().removeAttr("style")
         	$('div.c-event-item[data-event-day="' + d + '"]').children().css("color","white")
-       
+       		$('div.c-event[data-event-day="' + d + '"]').siblings().removeAttr("style")
+        	$('div.c-event[data-event-day="' + d + '"]').css({"box-shadow":" 0 0 8px #cccccc","font-weight":"700","color":"#fff","background": "-webkit-linear-gradient(left, #01c2e6 , #1160ff)","background":" -o-linear-gradient(right, #01c2e6 , #1160ff)","background": "-moz-linear-gradient(right, #01c2e6 , #1160ff)","background": "linear-gradient(to right, #01c2e6 , #1160ff)"}).host;
+        	
         }
         
         var nextMonth = function () {
@@ -492,7 +485,7 @@ $(document).ready(function () {
                         var d = settings.events[j].datetime;
                         if (d.getDate() == day && (d.getMonth() - 1) == dMonth && d.getFullYear() == dYear) {
                             cDay.addClass('c-event').attr('data-event-day', d.getDate());
-                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent).on('click', clickday);
+                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent).on('click', clickitem);
                         }
                     }
                     cDay.html(day++);
@@ -557,7 +550,7 @@ $(document).ready(function () {
     $.fn.eCalendar.defaults = {
         weekDays: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
         months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
-        textArrows: {previous: '<', next: '>'},
+        textArrows: {previous: '', next: ''},
         eventTitle: '',
         url: '',
         events: [

@@ -394,26 +394,26 @@ function starcourse() {
 			data: [{
 					value: 35,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				}, {
 					value: 51,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 32,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 40,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 59,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 			]
 		}]
@@ -467,36 +467,36 @@ function starcourse() {
 			data: [{
 					value: 35,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				}, {
 					value: 51,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 32,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 40,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 59,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 67,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 42,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 			]
 		}]
@@ -544,11 +544,11 @@ function starcourse() {
 			data: [{
 					value: 35,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				}, {
 					value: 51,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				}
 			]
 		}]
@@ -607,41 +607,41 @@ function starcourse() {
 			data: [{
 					value: 35,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				}, {
 					value: 51,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 32,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 40,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 59,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 67,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 42,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 55,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 			]
 		}]
@@ -693,26 +693,26 @@ function starcourse() {
 			data: [{
 					value: 35,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				}, {
 					value: 51,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 32,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 40,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 				{
 					value: 59,
 					symbol: pathSymbols.reindeer,
-					symbolSize: [50, 40]
+					symbolSize: [40, 30]
 				},
 			]
 		}]
