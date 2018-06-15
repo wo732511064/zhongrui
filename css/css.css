@@ -361,7 +361,7 @@
 .c-month-top{font-size: 22px;margin-top: 90px;}
 .c-month-center{font-size: 92px;color: #fff;}
 .c-month-bottom{font-size: 22px;height: 30px}
-.c-nav-btn-over{background-color:#89a3c0!important;font-weight:700}
+.c-nav-btn-over{}
 .c-today{color:white;background: -webkit-linear-gradient(left, #01c2e6 , #1160ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #01c2e6 , #1160ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #01c2e6 , #1160ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #01c2e6 , #1160ff)}
 .c-event{background-color:#00aeff;color:#fff;font-weight:700;cursor:pointer;position:relative;overflow:hidden; }
 /*.c-event:before{content:"课";color:#FFF;position:absolute;top:0;left:0;z-index:1}
