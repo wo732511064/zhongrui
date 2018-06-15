@@ -301,6 +301,7 @@ $(document).ready(function () {
          '07', '08', '09', '10', '11', '12'],
 	    events: [
 	    	{title: 'Event Title 1', description: 'Description 1', datetime: new Date(2018, 3, 16, 12),href:'http://www.baidu.com'},
+	        {title: 'Event Title 1', description: 'Description 1', datetime: new Date(2018, 3, 16, 12),href:'http://www.baidu.com'},
 	        {title: 'Event Title 2', description: 'Description 2', datetime: new Date(2018, 3, 17, 12)},
 	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 3, 18, 17)},
 	        {title: 'Event Title 4', description: 'Description 4', datetime: new Date(2018, 3, 19, 12)},
@@ -311,7 +312,8 @@ $(document).ready(function () {
 	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 3, 24, 17)},
 	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 3, 25, 17)},
 	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 3, 26, 17)},
-	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 3, 27, 17)}
+	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 3, 27, 17)},
+	        {title: 'Event Title 3', description: 'Description 3', datetime: new Date(2018, 6, 15, 17)}
 	    ]
 });
 });
@@ -347,30 +349,50 @@ $(document).ready(function () {
         var mouseLeave = function () {
             $(this).removeClass('c-nav-btn-over');
         };
+        
         var mouseOverEvent = function () {
         	$(".c-event-list").scrollTop(0);
-        	
             $(this).addClass('c-event-over');
             var d = $(this).attr('data-event-day');
-            $('div.c-event-item[data-event-day="' + d + '"]').addClass('c-event-over').host;
+            $('div.c-event-item[data-event-day="' + d + '"]').addClass('c-event-over1').host;
             $(".c-event-list").scrollTop($('div.c-event-item[data-event-day="' + d + '"]').position().top - $('div.c-event-item[data-event-day="' + d + '"]').height())
         };
+        
         var mouseLeaveEvent = function () {
             $(this).removeClass('c-event-over')
             var d = $(this).attr('data-event-day');
-            $('div.c-event-item[data-event-day="' + d + '"]').removeClass('c-event-over');
+            $('div.c-event-item[data-event-day="' + d + '"]').removeClass('c-event-over1');
             
         };
         var mouseOverItem = function () {
-            $(this).addClass('c-event-over');
+            $(this).addClass('c-event-over1');
             var d = $(this).attr('data-event-day');
             $('div.c-event[data-event-day="' + d + '"]').addClass('c-event-over');
         };
         var mouseLeaveItem = function () {
-            $(this).removeClass('c-event-over')
+            $(this).removeClass('c-event-over1')
             var d = $(this).attr('data-event-day');
             $('div.c-event[data-event-day="' + d + '"]').removeClass('c-event-over');
         };
+        var clickday = function(){
+        	var d =$(this).attr('data-event-day');
+        	
+        	
+        	$('div.c-event-item[data-event-day="' + d + '"]').siblings().removeAttr("style")
+        	$('div.c-event-item[data-event-day="' + d + '"]').css({"font-weight":"700","color":"#fff","background": "-webkit-linear-gradient(left, #01c2e6 , #1160ff)","background":" -o-linear-gradient(right, #01c2e6 , #1160ff)","background": "-moz-linear-gradient(right, #01c2e6 , #1160ff)","background": "linear-gradient(to right, #01c2e6 , #1160ff)"}).host;
+        	$('div.c-event-item[data-event-day="' + d + '"]').siblings().children().removeAttr("style")
+        	$('div.c-event-item[data-event-day="' + d + '"]').children().css("color","white")
+        	
+        }
+        var clickitem = function(){
+       		var d =$(this).attr('data-event-day');
+        	$('div.c-event-item[data-event-day="' + d + '"]').siblings().removeAttr("style")
+        	$('div.c-event-item[data-event-day="' + d + '"]').css({"font-weight":"700","color":"#fff","background": "-webkit-linear-gradient(left, #01c2e6 , #1160ff)","background":" -o-linear-gradient(right, #01c2e6 , #1160ff)","background": "-moz-linear-gradient(right, #01c2e6 , #1160ff)","background": "linear-gradient(to right, #01c2e6 , #1160ff)"}).host;
+        	$('div.c-event-item[data-event-day="' + d + '"]').siblings().children().removeAttr("style")
+        	$('div.c-event-item[data-event-day="' + d + '"]').children().css("color","white")
+       
+        }
+        
         var nextMonth = function () {
             if (dMonth < 11) {
                 dMonth++;
@@ -382,7 +404,7 @@ $(document).ready(function () {
             if($(".c-day").is(".c-today")){
             	$(".c-month-top").html(dYear + "-" + settings.months[dMonth]);
 	            $(".c-month-center").html($(".c-today").text());
-	            $(".c-month-bottom").html("有课");
+//	            $(".c-month-bottom").html("有课");
             }
             else{
             	$(".c-month-top").html(dYear);
@@ -441,7 +463,8 @@ $(document).ready(function () {
             cPrevious.html(settings.textArrows.previous);
             
             cNext.html(settings.textArrows.next);
-
+			
+			
             cPrevious.on('mouseover', mouseOver).on('mouseleave', mouseLeave).on('click', previousMonth);
             cNext.on('mouseover', mouseOver).on('mouseleave', mouseLeave).on('click', nextMonth);
 			
@@ -469,7 +492,7 @@ $(document).ready(function () {
                         var d = settings.events[j].datetime;
                         if (d.getDate() == day && (d.getMonth() - 1) == dMonth && d.getFullYear() == dYear) {
                             cDay.addClass('c-event').attr('data-event-day', d.getDate());
-                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
+                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent).on('click', clickday);
                         }
                     }
                     cDay.html(day++);
@@ -489,7 +512,7 @@ $(document).ready(function () {
                     var title = $('<div/>').addClass('title').html(date + '  ' + settings.events[i].title );
                     var description = $('<div/>').addClass('description').html(settings.events[i].description );
                     item.attr('data-event-day', d.getDate());
-                    item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem);
+                    item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem).on('click', clickitem);
                     
                     item.append(a);
                     a.append(title).append(description);
