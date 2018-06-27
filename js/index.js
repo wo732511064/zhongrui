@@ -63,9 +63,12 @@
 
 
 function JiaZai(){
+	if($(window).scrollTop() >= $("#xinwen").offset().top-$(window).height()+$("#xinwen").outerHeight(true)){
+		$(".entrance-center-left").animate({marginLeft:"0px",opacity:"1"},1000)
+		$(".entrance-center-right").animate({marginRight:"0px",opacity:"1"},1000)
+	}
 	if($(window).scrollTop() >= $("#train-title-rili").offset().top-$(window).height()+$("#train-title-rili").outerHeight(true)){
 		if($("#calendar").length>0){
-		 	return
 		}else{
 			$("#rili").append("<div id='calendar' style='opacity: 0;'></div>");
 			Rili()
@@ -75,7 +78,6 @@ function JiaZai(){
 	}
 	if($(window).scrollTop() >= $("#train-title-starcourse-dibu").offset().top-$(window).height()+$("#train-title-starcourse-dibu").outerHeight(true)){
 		if($(".starcourse").length>0){
-		 	return
 		}else{
 			$("#starcourse-dibu").append("<div class='starcourse clearfix' style='opacity: 0;'><!--明星课程左--><div class='starcourse-left'><div id='a1' class='starcourse-left-frame frame-a1'><img src='images/starcourse/a1.png'><span>IT管理</span></div><div id='a2' class='starcourse-left-frame frame-a2 active'><img src='images/starcourse/a2.png'><span>移动开发</span></div><div id='a3' class='starcourse-left-frame frame-a3'><img src='images/starcourse/a3.png'><span>大数据</span></div><div id='a4' class='starcourse-left-frame frame-a4'><img src='images/starcourse/a4.png'><span>软件测试</span></div><div id='a5' class='starcourse-left-frame frame-a5'><img src='images/starcourse/a5.png'><span>架构测试</span></div><div id='a6' class='starcourse-left-frame frame-a6'><img src='images/starcourse/a6.png'><span>产品规划</span></div></div><!--明星课程右--><div class='starcourse-right'><div class='starcourse-right-frame active' id='b1'><div class='right-frame-header'><span> </span><div id='b2'>移动开发</div></div><div class='right-frame-text' id='b3'>移动开发需求简介：  没错就是简介简介简介简介简介简介简介简介，简介简介简介简介简介简介简介简介简介，简介简介简介简介简介简介，简介简介简介简介简介简介简介简介简介，简介简介简介简介简介简介，简介简介简介简介简介简介简介简介简介，简介简介简介简介简介简介，简介简介简介简介简介简介简介简介简介。</div><div style='width: 700px;height: 380px;margin: 0 auto;transition: all 0.5s;' id='main'></div></div></div></div>");
 			starcourse()
@@ -84,6 +86,7 @@ function JiaZai(){
 			$(".starcourse").animate({opacity:"1"},1000)
 		}
 	}
+	
 }
 
 function banner() {
