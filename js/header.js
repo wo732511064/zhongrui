@@ -1,7 +1,3 @@
-
-	
-
-
 function Header(){
 	$(window).scroll(function(){
 		// 滚动条距离顶部的距离 大于 200px时
