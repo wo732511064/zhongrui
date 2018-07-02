@@ -27,8 +27,8 @@
 .block{display: block;}
 /*index页面*/
 /*index header*/
-.entrance-header{width: 100%;height: 70px;background: none;z-index: 99;position:fixed;top:0;transition: all 0.3s;}
-.entrance-header1{width: 100%;height: 70px;background: #fff;z-index: 99;position: absolute;top: 0;z-index: 9999;}
+.entrance-header{width: 100%;height: 70px;z-index: 99;position:fixed;top:0;transition: all 0.3s;}
+.entrance-header1{width: 100%;height: 70px;z-index: 99;position: absolute;top: 0;z-index: 9999;background: #FFFFFF;}
 .entrance-header-min{width:1200px ;margin: 0 auto;}
 .entrance-header-min1{width:1200px ;margin: 0 auto;}
 .entrance-header-min a{color: #ffffff;}
@@ -645,9 +645,9 @@
 .about-about{width: 1179px;margin: 0 auto;}
 .about-about-frame{width: 50%;float: left;}
 .about-about-right img{width: 100%;}
-.about-about-frame-title{margin-top: 80px;font-size:18px;margin-left: 60px;margin-bottom: 15px;}
+.about-about-frame-title{margin-top: 20px;font-size:20px;margin-left: 60px;margin-bottom: 15px;color: #494949;}
 .about-about-frame-title1{font-size:12px;margin-left: 60px;color:#caae8f;margin-bottom: 25px;}
-.about-about-frame-text{font-size:12px;margin-left: 60px;line-height: 26px;color: #808080;}
+.about-about-frame-text{font-size:12px;margin-left: 60px;line-height: 30px;color: #999999;}
 .about-advantages{width: 1179px;margin: 0 auto;cursor: default;}
 .about-advantages-frame{z-index: 3;width: 33.3%;float: left;margin-right: -1px;height: 260px;perspective:1000;transform-style:preserve-3d;transition:all 1s;}
 .about-advantages-frame-flip{text-align: center;width: 100%;height: 260px;position:relative;transform-style:preserve-3d;transition:all 1s;}
@@ -679,13 +679,13 @@
 .about-choose-frame{width: 50%;height: auto;float: left;padding-right: 95px;box-sizing: border-box;margin-bottom: 70px;}
 .about-choose-frame:nth-child(even){padding-left: 95px;padding-right: 0;}
 .about-choose-frame-title{font-size: 18px;margin-bottom: 20px;color: #494949;}
-.about-choose-frame-text{font-size: 14px;line-height: 32px;color: #808080;}
+.about-choose-frame-text{font-size: 14px;line-height: 32px;color: #999999;}
 
 .footer{background: #1c2836;width: 100%;padding-top: 70px;padding-bottom: 50px;}
 .footer-frame{width: 1179px;margin: 0 auto;position: relative;text-align: center;font-size: 16px;line-height: 28px;color: #9c9c9c;}
-.footer-frame-erweima{position: absolute;left: 0;top: -40px;color: white;}
+.footer-frame-erweima{position: absolute;left: 0;top: -50px;color: white;}
 .footer-frame-erweima-title{font-size: 22px;font-weight: bold;margin-bottom: 30px;}
 .footer-frame-erweima-title span{font-size: 10px;color: #caae8f;font-weight: 100;margin-left: 10px;}
-.footer-frame-erweima-img{background: white;width: 120px;height: 120px;background-size:cover ;margin-bottom: 10px;}
+.footer-frame-erweima-img{background: url(../images/erwei.jpg);width: 120px;height: 120px;background-size:cover ;margin-bottom: 10px;}
 .footer-frame-erweima-text{width: 120px;text-align: center;}
-.footer-line{width: 100%;padding: 10px;box-sizing: border-box;text-align: right;background: #39383a;color: #808080;}
+.footer-line{width: 100%;padding:10px;box-sizing: border-box;text-align: right;background: #39383a;color: #808080;padding-right: 20px;}
