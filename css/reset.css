@@ -5,7 +5,7 @@
 a:hover, a:focus{text-decoration:none;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
-body{min-width: 1200px;max-width: 1920px;-webkit-text-size-adjust:none;}
+body{max-width: 1920px;-webkit-text-size-adjust:none;}
 fieldset,img{border:0;}
 img{ vertical-align: top; max-width: 100%; }
 address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
