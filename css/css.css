@@ -639,7 +639,7 @@
 .about-header img{width: 100%;}
 .about-title{margin-top: 100px;text-align: center;margin-bottom: 45px;}
 .about-zizhi{width: 1366px;margin: 0 auto}
-.about-zizhi-frame{width: 25%;border-right:1px solid #cccccc;text-align: center;float: left;margin-left: -2px;line-height: 30px;}
+.about-zizhi-frame{width: 25%;border-right:1px solid #cccccc;float: left;margin-left: -2px;line-height: 30px;box-sizing: border-box;padding-left: 5%;}
 .about-zizhi-frame a{display: block;width: 100%;font-size: 14px;}
 .about-zizhi-frame:last-child{margin: 0}
 .about-about{width: 1179px;margin: 0 auto;}
@@ -652,11 +652,11 @@
 .about-advantages-frame{z-index: 3;width: 33.3%;float: left;margin-right: -1px;height: 260px;perspective:1000;transform-style:preserve-3d;transition:all 1s;}
 .about-advantages-frame-flip{text-align: center;width: 100%;height: 260px;position:relative;transform-style:preserve-3d;transition:all 1s;}
 .about-advantages-frame-none{border: 1px solid #f1f1f1;color: #999999;text-align: center;position:absolute;top: 0px;left: 0px;backface-visibility:hidden;width: 100%;height: 100%;z-index: 1;background: white;}
-.about-advantages-frame-hover{color: #FFFFFF;position:absolute;top: 0px;left: 0px;backface-visibility:hidden;width: 100%;height: 100%;background: -webkit-linear-gradient(#1161ff, #02c1e6); /* Safari 5.1 - 6.0 */ background: -o-linear-gradient(#1161ff, #02c1e6); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#1161ff, #02c1e6); /* Firefox 3.6 - 15 */background: linear-gradient(#1161ff, #02c1e6); /* 标准的语法 */transform:rotateY(-180deg);}
+.about-advantages-frame-hover{z-index: 1;color: #FFFFFF;position:absolute;top: 0px;left: 0px;backface-visibility:hidden;width: 100%;height: 100%;background: -webkit-linear-gradient(#1161ff, #02c1e6); /* Safari 5.1 - 6.0 */ background: -o-linear-gradient(#1161ff, #02c1e6); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#1161ff, #02c1e6); /* Firefox 3.6 - 15 */background: linear-gradient(#1161ff, #02c1e6); /* 标准的语法 */transform:rotateY(-180deg);}
 .about-advantages-frame:hover .about-advantages-frame-flip{transform:rotateY(180deg);}
-.about-advantages-frame-none img{margin-top: 60px;margin-bottom: 35px;}
-.about-advantages-frame-title{font-size: 30px;margin-bottom: 5px;}
-.about-advantages-frame-text{font-size: 20px;line-height: 30px;width: 320px;margin: 0 auto;}
+.about-advantages-frame-none img{margin-top: 70px;margin-bottom: 25px;width: 35px;}
+.about-advantages-frame-title{font-size: 26px;margin-bottom: 5px;}
+.about-advantages-frame-text{font-size: 18px;line-height: 30px;width: 320px;margin: 0 auto;}
 .about-advantages-frame-hover .about-advantages-frame-title{margin-top:35px;}
 .about-advantages-frame-hover div:nth-child(2){margin-bottom: 10px;}
 .about-advantages-frame-hover div:nth-child(3){font-size: 16px;}
@@ -668,9 +668,9 @@
 .about-flow-frame:hover{color: white;}
 .about-flow-frame:hover .about-flow-frame-yuan{border:4px solid #ffffff ;}
 .about-flow-frame-title{font-size: 24px;margin-bottom: 15px;}
-.about-flow-frame-text{font-size: 18px;}
+.about-flow-frame-text{font-size: 18px;line-height: 30px;}
 .about-flow-frame-add{transition: all 0.3s;cursor: pointer;color: #cccccc;font-size: 30px;text-align: center;line-height:25px;border-radius: 50%;width: 30px;height: 30px;border:5px solid #cccccc ;background: white;margin: 0 auto;}
-.about-flow-frame-add:hover{transform:rotate(90deg);
+.about-flow-frame-add:hover{transform:rotate(45deg);
 -ms-transform:rotate(90deg); 	/* IE 9 */
 -moz-transform:rotate(90deg); 	/* Firefox */
 -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
@@ -679,7 +679,7 @@
 .about-choose-frame{width: 50%;height: auto;float: left;padding-right: 95px;box-sizing: border-box;margin-bottom: 70px;}
 .about-choose-frame:nth-child(even){padding-left: 95px;padding-right: 0;}
 .about-choose-frame-title{font-size: 18px;margin-bottom: 20px;color: #494949;}
-.about-choose-frame-text{font-size: 14px;line-height: 36px;color: #808080;}
+.about-choose-frame-text{font-size: 14px;line-height: 32px;color: #808080;}
 
 .footer{background: #1c2836;width: 100%;padding-top: 70px;padding-bottom: 50px;}
 .footer-frame{width: 1179px;margin: 0 auto;position: relative;text-align: center;font-size: 16px;line-height: 28px;color: #9c9c9c;}
