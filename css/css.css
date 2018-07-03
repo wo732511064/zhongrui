@@ -29,6 +29,7 @@
 /*index header*/
 .entrance-header{width: 100%;height: 70px;z-index: 99;position:fixed;top:0;transition: all 0.3s;}
 .entrance-header1{width: 100%;height: 70px;z-index: 99;position: absolute;top: 0;z-index: 9999;background: #FFFFFF;}
+.entrance-header2{width: 100%;height: 70px;z-index: 99;position: fixed;top: 0;z-index: 9999;background: #FFFFFF;}
 .entrance-header-min{width:1200px ;margin: 0 auto;}
 .entrance-header-min1{width:1200px ;margin: 0 auto;}
 .entrance-header-min a{color: #ffffff;}
@@ -520,9 +521,11 @@
 .section-wrap .section{position:relative;width:100%;height:100%;background-position:center center;background-repeat:no-repeat}
 .section-wrap .section-1{background-color:white}
 .section-wrap .section-2{background-color:rgba(0,0,0,0.9)}
-.section-wrap .section-3{background-color:#5bc0de}
+.section-wrap .section-3{background:url(../images/enterprise/qiyebeijing.jpg);background-size:cover;}
 .section-wrap .section-4{background-color:#f0ad4e}
 .section-wrap .section-5{background-color:#d9534f}
+.section-3-button{width: 537px;height: 80px;left: 50%;margin-left: -268.5px;border-radius:10px;line-height: 80px;font-size: 36px;color: #4a6c8e;box-shadow: 5px 5px 0px #606060;background: white;text-align: center;position: absolute;top: 70%;}
+.section-3-button a{color: #4a6c8e;display: block;}
 .put-section-0{transform:translateY(0);-webkit-transform:translateY(0)}
 .put-section-1{transform:translateY(-100%);-webkit-transform:translateY(-100%)}
 .put-section-2{transform:translateY(-200%);-webkit-transform:translateY(-200%)}
@@ -608,7 +611,7 @@
 .enterprise-flow:nth-child(3){background: url(../images/enterprise/enterprise3.jpg);}
 .enterprise-flow:nth-child(4){background: url(../images/enterprise/enterprise4.jpg);}
 .enterprise-flow:nth-child(5){background: url(../images/enterprise/enterprise5.jpg);}
-.enterprise-flow-header{z-index: 2;overflow: hidden;border-radius: 10px;background: white;width: 535px;position: absolute;top: 12%;left: 50%;text-align: center;font-size: 24px;font-size:36px;color:#4a6c8e;margin-left:-268px;height: 80px;line-height: 80px;transition:all 1s;-moz-transition:all 1s;-webkit-transition:all 1s;-o-transition:all 1s}
+.enterprise-flow-header{box-shadow: 5px 5px 0px #606060;z-index: 2;overflow: hidden;border-radius: 10px;background: white;width: 535px;position: absolute;top: 12%;left: 50%;text-align: center;font-size: 24px;font-size:36px;color:#4a6c8e;margin-left:-268px;height: 80px;line-height: 80px;transition:all 1s;-moz-transition:all 1s;-webkit-transition:all 1s;-o-transition:all 1s}
 .enterprise-flow-all{position: relative;width: 100%;height: 100%;}
 .enterprise-flow-img{border: 0 solid #fff;text-align: center;position: absolute;width: 100px;height: 100px;border-radius:50% ;top:50%;left: 50%;margin-left: -30px;margin-top: -30px;transition:all 0.5s;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;-o-transition:all 0.5s}
 .enterprise-flow:hover{transform: scale(1.2);}
