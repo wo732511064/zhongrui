@@ -105,7 +105,7 @@ ZoomPic.prototype =
 							};
 							_this.aSort[_this.iCenter].onmouseout = function ()
 							{
-								_this.doMove(this.getElementsByTagName("div")[0], {bottom:-100})
+								_this.doMove(this.getElementsByTagName("div")[0], {bottom:-150})
 							}
 						})
 					})
