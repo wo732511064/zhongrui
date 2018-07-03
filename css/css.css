@@ -39,6 +39,7 @@
 .entrance-header-min img{float: left;margin-top: 10px;}
 .entrance-header-text{float: right;position: relative;}
 .entrance-header-text1{position:relative;margin: 30px 20px 0px 20px;font-size: 14px;float: left;}
+.entrance-header1 .entrance-header-text-border{left: 50%;margin-left: -9px;border-bottom:3px solid rgb(28, 111, 175) ;width: 18px;position: absolute;top: 30px;opacity: 0;transition:all 0.5s;-moz-transition: all 0.5s; -webkit-transition: all 0.5s;-o-transition: all 0.5s}
 .entrance-header-text-border{left: 50%;margin-left: -9px;border-bottom:3px solid #ffffff ;width: 18px;position: absolute;top: 30px;opacity: 0;transition:all 0.5s;-moz-transition: all 0.5s; -webkit-transition: all 0.5s;-o-transition: all 0.5s}
 .entrance-header-text1:hover .entrance-header-text-border{opacity: 1;top:25px;}
 .entrance-selection{position: relative;width: 100%;background: url(../images/entrance-selection.png);background-size:cover;height: 710px;margin-bottom: 80px;}
