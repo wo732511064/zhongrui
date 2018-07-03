@@ -26,7 +26,7 @@ function flow(){
 	$(".enterprise-flow").on("click",function(){
 		$(".enterprise-flow-header").css({"width":"0","margin-left":"10px"});
 		$(this).css({"position":"static","width":"100%"}).siblings().css({"position":"static","width":"0"});
-		$(".enterprise-flow-img,.enterprise-flow-text").css({"display":"none"});
+		$(".enterprise-flow-img,.enterprise-flow-text,.enterprise-flow-text1").css({"display":"none"});
 		$(".enterprise-qiehuan").css({"display":"block"});
 		$(".enterprise-qiehuan-img1").css({"display":"block"});
 		$(".enterprise-qiehuan-right").css("display","block");
@@ -52,8 +52,8 @@ function flow(){
 	})
 	$(".enterprise-iscrum").on("click",function(){
 		$(".enterprise-flow-header").css({"width":"535px","margin-left":"-268px"});
-		$(".enterprise-flow").css({"position":"relative","width":"20%"});
-		$(".enterprise-flow-img,.enterprise-flow-text").css({"display":"block"});
+		$(".enterprise-flow").css({"position":"relative","width":"16.666666%"});
+		$(".enterprise-flow-img,.enterprise-flow-text,.enterprise-flow-text1").css({"display":"block"});
 		$(".enterprise-qiehuan").css({"display":"none"});
 		$(".enterprise-qiehuan-img1").css({"display":"none"});
 		$(".enterprise-qiehuan-right").css("display","none");
@@ -63,8 +63,8 @@ function flow(){
 	})
 	$(".enterprise-qiehuan-img4").on("click",function(){
 		$(".enterprise-flow-header").css({"width":"535px","margin-left":"-268px"});
-		$(".enterprise-flow").css({"position":"relative","width":"20%"});
-		$(".enterprise-flow-img,.enterprise-flow-text").css({"display":"block"});
+		$(".enterprise-flow").css({"position":"relative","width":"16.666666%"});
+		$(".enterprise-flow-img,.enterprise-flow-text,.enterprise-flow-text1").css({"display":"block"});
 		$(".enterprise-qiehuan").css({"display":"none"});
 		$(".enterprise-qiehuan-img1").css({"display":"none"});
 		
