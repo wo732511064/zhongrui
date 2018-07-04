@@ -148,7 +148,7 @@
 .team_top ul{position:relative;width:1192px;height:292px; left:20px;}
 .team_top li{position:absolute;width:0;height:0;top:146px;left:377px; z-index:0; cursor:pointer; overflow:hidden; background:url(../images/bg.png) repeat; }
 .team_top li img{width:100%;height:100%; vertical-align:top;object-fit: cover;}
-.team_top li div{position:absolute; bottom:-100px; left:0; width:100%;height:150px;background:#000;filter:alpha(opacity=70);opacity:0.7;}
+.team_top li div{position:absolute; bottom:-150px; left:0; width:100%;height:150px;background:#000;filter:alpha(opacity=70);opacity:0.7;}
 .team_top li div h4{margin:0 10px;font:12px/24px arial;border-bottom:1px #333 solid; color:#ff6e13;}
 .team_top li div h4 span{color:red; margin-left:10px;}
 .team_top li div p{margin:5px 10px 0;text-indent:2em; color:#fff;}
