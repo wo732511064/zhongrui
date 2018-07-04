@@ -50,16 +50,14 @@ function flow(){
 		$(".enterprise-content-frame").eq(t).css("display","block").siblings(".enterprise-content-frame").css("display","none")	
 		return t;
 	})
+	
 	$(".enterprise-iscrum").on("click",function(){
-		$(".enterprise-flow-header").css({"width":"535px","margin-left":"-268px"});
-		$(".enterprise-flow").css({"position":"relative","width":"16.666666%"});
-		$(".enterprise-flow-img,.enterprise-flow-text,.enterprise-flow-text1").css({"display":"block"});
-		$(".enterprise-qiehuan").css({"display":"none"});
-		$(".enterprise-qiehuan-img1").css({"display":"none"});
-		$(".enterprise-qiehuan-right").css("display","none");
-		$(".enterprise-qiehuan-img2").css("display","none");
- 		
- 		$(".enterprise-content-frame").css("display","none");
+		$(this).siblings(".enterprise-qiehuan-img").children(".enterprise-qiehuan-img2").css("display","none").prev().css("display","block")
+		
+		t = 0;
+		$(".enterprise-flow").eq(t).css("width","100%").siblings(".enterprise-flow").css("width","0");
+		$(".enterprise-content-frame").eq(t).css("display","block").siblings(".enterprise-content-frame").css("display","none")	
+		return t;
 	})
 	$(".enterprise-qiehuan-img4").on("click",function(){
 		$(".enterprise-flow-header").css({"width":"535px","margin-left":"-268px"});
@@ -206,6 +204,7 @@ function section(){
 		        setTimeout('$(".demo-img13 img").fadeIn(1000);',3000);
 		        setTimeout('$(".demo-img14 img").fadeIn(1000);',3250);
 			}
+			
 			
 		};
 
