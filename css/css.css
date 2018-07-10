@@ -113,10 +113,11 @@
 .train-title{width: 100%;text-align: center;margin:50px auto;}
 .entrance-center{width: 100%;}
 .entrance-center-center{width: 1200px;margin: 35px auto;background: white;}
-.entrance-center-center-border{border-bottom: 1px solid #efefef;}
-.entrance-center-center-head{float:left;margin: 0px 25px;font-size: 18px;border-bottom: 2px solid #1c6faf;padding:30px 0px 5px 15px;width: 100px;}
+.entrance-center-center-border{margin: 0 20px;border-bottom: 1px solid #efefef;}
+.entrance-center-center-head{float:left;margin: 0px 25px 0 0;font-size: 18px;border-bottom: 2px solid #1c6faf;padding:30px 0px 5px 15px;width: 100px;}
 .entrance-center-center-right{float: right;margin-right: 25px;color: #7d7d7d;margin-top: 30px;}
-.entrance-center-center-news{width: 550px;float: left;height: 39px;border-bottom:1px dashed #dfdfdf ;padding: 20px 25px;}
+.entrance-center-center-news{width: 550px;float: left;height: 39px;border-bottom:1px dashed #dfdfdf ;padding: 20px 0px;margin: 0 20px;}
+.entrance-center-center-news:nth-child(8),.entrance-center-center-news:nth-child(9){border: 0;}
 .entrance-center-center-news:hover{color: #FFFFFF;background: #469FEB;}
 .entrance-center-center-news:hover .entrance-center-center-news-text1,.entrance-center-center-news:hover .entrance-center-center-news-text2 a,.entrance-center-center-news:hover .entrance-center-center-news-text3{color: #FFFFFF;}
 .entrance-center-center-news-text1{color: #8f8f8f;font-size: 27px;float: left;}
