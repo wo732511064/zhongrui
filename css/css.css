@@ -112,11 +112,11 @@
 /*center*/
 .train-title{width: 100%;text-align: center;margin:50px auto;}
 .entrance-center{width: 100%;}
-.entrance-center-center{width: 1200px;margin: 35px auto;background: white;}
-.entrance-center-center-border{margin: 0 20px;border-bottom: 1px solid #efefef;}
-.entrance-center-center-head{float:left;margin: 0px 25px 0 0;font-size: 18px;border-bottom: 2px solid #1c6faf;padding:30px 0px 5px 15px;width: 100px;}
-.entrance-center-center-right{float: right;margin-right: 25px;color: #7d7d7d;margin-top: 30px;}
-.entrance-center-center-news{width: 550px;float: left;height: 39px;border-bottom:1px dashed #dfdfdf ;padding: 20px 0px;margin: 0 20px;}
+.entrance-center-center{width: 1200px;margin: 35px auto;background: white;padding: 0 20px;box-sizing: border-box;}
+.entrance-center-center-border{border-bottom: 1px solid #efefef;}
+.entrance-center-center-head{float:left;margin: 0px 25px 0 0;font-size: 18px;border-bottom: 2px solid #1c6faf;padding:30px 0px 5px 0px;width: 100px;}
+.entrance-center-center-right{float: right;color: #7d7d7d;margin-top: 30px;}
+.entrance-center-center-news{width: 560px;float: left;height: 39px;border-bottom:1px dashed #dfdfdf ;padding: 20px 0px;margin: 0 10px;}
 .entrance-center-center-news:nth-child(8),.entrance-center-center-news:nth-child(9){border: 0;}
 .entrance-center-center-news:hover{color: #FFFFFF;background: #469FEB;}
 .entrance-center-center-news:hover .entrance-center-center-news-text1,.entrance-center-center-news:hover .entrance-center-center-news-text2 a,.entrance-center-center-news:hover .entrance-center-center-news-text3{color: #FFFFFF;}
@@ -128,12 +128,13 @@
 .entrance-center-left{float: left;width: 550px;margin-left:-100px;opacity: 0;}
 .entrance-center-right{float: right;width: 550px;margin-right:-100px;opacity: 0;}
 .entrance-center-left-news{margin-top: 20px;position: relative;}
-.entrance-center-center-left-text1{width: 45px;height: 60px;float: left;margin: 0px 20px 0 25px;}
+.entrance-center-center-left-text1{width: 45px;height: 60px;float: left;margin: 0px 20px 0 0px;}
 .entrance-center-center-left-text2{font-size: 12px;height: 30px;line-height: 30px;}
+.entrance-center-center-left-text2 a{font-size:18px;}
 .entrance-center-center-left-text3{font-size: 12px;color: #3e3e3e;height: 30px;line-height: 30px;}
-.entrance-center-center-left-time{position: absolute;right: 0px;top:0px}
-.left-text1-top{width: 45px;text-align: center;height: 30px;line-height: 30px;background: #e5e5e5;color: white;}
-.left-text1-bottom{width: 45px;height: 30px;text-align: center;line-height: 30px;color: #e5e5e5;box-sizing: border-box;transition:all .5s;-moz-transition:all .5s;-webkit-transition:all .5s;-o-transition:all .5s;}
+.entrance-center-center-left-time{color:#e5e5e5 ;position: absolute;right: 0px;top:0px;height: 30px;line-height: 30px;}
+.left-text1-top{width: 45px;text-align: center;height: 30px;line-height: 30px;background: #e5e5e5;color: white;transition:all .5s;-moz-transition:all .5s;-webkit-transition:all .5s;-o-transition:all .5s;}
+.left-text1-bottom{border: 1px solid #e5e5e5;width: 45px;height: 30px;text-align: center;line-height: 30px;color: #e5e5e5;box-sizing: border-box;transition:all .5s;-moz-transition:all .5s;-webkit-transition:all .5s;-o-transition:all .5s;}
 .entrance-center-left-news:hover .left-text1-top{background: #ff9934;transition:all .5s;-moz-transition:all .5s;-webkit-transition:all .5s;-o-transition:all .5s;}
 .entrance-center-left-news:hover .left-text1-bottom{border: 1px solid #ff9934;color: #ff9934;}
 .entrance-center-left-news:hover .entrance-center-center-left-text2 a{color: #ff9934;}
@@ -678,7 +679,7 @@
 .about-advantages-frame{z-index: 3;width: 33.3%;float: left;margin-right: -1px;height: 260px;perspective:1000;transform-style:preserve-3d;-ms-transform-style:preserve-3d; 	/* IE 9 */-moz-transform-style:preserve-3d; 	/* Firefox */-webkit-transform-style:preserve-3d; /* Safari 和 Chrome */-o-transform-style:preserve-3d;transition:all 1s;-moz-transition:  all 1s; /* Firefox 4 */-webkit-transition:  all 1s; /* Safari 和 Chrome */-o-transition: all 1s; /* Opera */}
 .about-advantages-frame-flip{text-align: center;width: 100%;height: 260px;position:relative;transform-style:preserve-3d;-ms-transform-style:preserve-3d; 	/* IE 9 */-moz-transform-style:preserve-3d; /* Firefox */-webkit-transform-style:preserve-3d; /* Safari 和 Chrome */-o-transform-style:preserve-3d;transition:all 1s;-moz-transition:  all 1s; /* Firefox 4 */-webkit-transition:  all 1s; /* Safari 和 Chrome */-o-transition: all 1s; /* Opera */}
 .about-advantages-frame-none{border: 1px solid #f1f1f1;color: #999999;text-align: center;position:absolute;top: 0px;left: 0px;backface-visibility:hidden;-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */-moz-backface-visibility:hidden; 	/* Firefox */-ms-backface-visibility:hidden; width: 100%;height: 100%;z-index: 1;background: white;}
-.about-advantages-frame-hover{z-index: 1;color: #FFFFFF;position:absolute;top: 0px;left: 0px;backface-visibility:hidden;width: 100%;height: 100%;background: -webkit-linear-gradient(#1161ff, #02c1e6); /* Safari 5.1 - 6.0 */ background: -o-linear-gradient(#1161ff, #02c1e6); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#1161ff, #02c1e6); /* Firefox 3.6 - 15 */background: linear-gradient(#1161ff, #02c1e6); /* 标准的语法 */transform:rotateY(-180deg);}
+.about-advantages-frame-hover{z-index: 1;color: #FFFFFF;position:absolute;top: 0px;left: 0px;backface-visibility:hidden;-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */-moz-backface-visibility:hidden; 	/* Firefox */-ms-backface-visibility:hidden;width: 100%;height: 100%;background: -webkit-linear-gradient(#1161ff, #02c1e6); /* Safari 5.1 - 6.0 */ background: -o-linear-gradient(#1161ff, #02c1e6); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#1161ff, #02c1e6); /* Firefox 3.6 - 15 */background: linear-gradient(#1161ff, #02c1e6); /* 标准的语法 */transform:rotateY(-180deg);}
 .about-advantages-frame:hover .about-advantages-frame-flip{transform:rotateY(180deg);-ms-transform:rotateY(180deg); 	/* IE 9 */-moz-transform:rotateY(180deg); 	/* Firefox */-webkit-transform:rotateY(180deg); /* Safari 和 Chrome */-o-transform:rotateY(7deg);}
 .about-advantages-frame-none img{margin-top: 70px;margin-bottom: 25px;width: 35px;}
 .about-advantages-frame-title{font-size: 22px;margin-bottom: 5px;}
@@ -707,7 +708,14 @@
 .about-choose-frame-title{font-size: 18px;margin-bottom: 20px;color: #494949;}
 .about-choose-frame-text{font-size: 14px;line-height: 32px;color: #999999;}
 
-.footer{background: #1c2836;width: 100%;padding-top: 70px;padding-bottom: 50px;}
+/*case*/
+.case-center-left{float: left;width: 350px;margin-right: 55px;}
+.case-center-left:nth-child(3n){float: left;width: 350px;margin-right: 0px;}
+.case-center-center-left-text{font-size: 13px;height: 35px;line-height: 35px;width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.case-center-center-left-text a{font-size:13px;}
+.case-center-center-border{border-bottom: 1px solid #efefef;margin-bottom: 15px;}
+
+.footer{background: #1c2836;width: 100%;padding-top: 70px;padding-bottom: 50px;margin-top: 50px;}
 .footer-frame{width: 1179px;margin: 0 auto;position: relative;text-align: center;font-size: 14px;line-height: 24px;color: #9c9c9c;}
 .footer-frame-erweima{position: absolute;left: 0;top: -50px;color: white;}
 .footer-frame-erweima-title{font-size: 22px;font-weight: bold;margin-bottom: 30px;}
